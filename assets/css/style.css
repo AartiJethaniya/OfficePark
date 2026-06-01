@@ -704,6 +704,10 @@ Version: 1.0.6
   .section-headings .heading + .text {
     -webkit-margin-before: 40px;
     margin-block-start: 40px; }
+
+  .section-headings .text + .text {
+    -webkit-margin-before: 24px;
+    margin-block-start: 24px; }
   
   .section-headings:not(.section-headings-horizontal) .buttons {
     -webkit-margin-before: 50px;
@@ -763,6 +767,10 @@ Version: 1.0.6
     .section-headings .heading + .text {
       -webkit-margin-before: 30px;
       margin-block-start: 30px; }
+
+    .section-headings .text + .text {
+      -webkit-margin-before: 20px;
+      margin-block-start: 20px; }
     .section-headings:not(.section-headings-horizontal) .buttons,
     .section-headings .buttons {
       -webkit-margin-before: 40px;
