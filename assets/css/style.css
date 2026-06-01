@@ -581,10 +581,23 @@ Version: 1.0.6
   @media (max-width: 767px) {
     .button {
       min-height: var(--style-button-height-mobile);
-      font-size: var(--font-button-size-mobile); }
+      font-size: var(--font-button-size-mobile);
+      padding: 8px 8px 8px 18px;
+      gap: 8px; }
+    .button-without-icon {
+      padding: 8px 18px; }
+    .button-without-icon.button--slim {
+      padding: 8px 14px; }
     .button--slim {
       height: var(--style-button-slim-height-mobile);
-      min-height: var(--style-button-slim-height-mobile); } }
+      min-height: var(--style-button-slim-height-mobile); }
+    .button .svg-wrapper {
+      min-width: 28px;
+      height: 28px; }
+    .button .svg-wrapper .icon-20,
+    .button .svg-wrapper svg {
+      width: 16px;
+      height: 16px; } }
   
   .content-absolute {
     position: absolute;
@@ -780,7 +793,9 @@ Version: 1.0.6
       flex-wrap: wrap;
       gap: 24px; }
     .section-headings-horizontal .buttons {
-      width: 100%; }
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
     .section-padding {
       --padding-top: 60px;
       --padding-bottom: 60px; }
