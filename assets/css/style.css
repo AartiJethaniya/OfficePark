@@ -1391,9 +1391,14 @@ Version: 1.0.6
     max-width: 1200px;
     width: 100%; }
 
+  @media (min-width: 992px) {
+    .hero-slider-3 .slider-card .content-box {
+      margin-top: 48px; } }
+
   @media (min-width: 1200px) {
     .hero-slider-3 .slider-card .content-box {
-      max-width: 1280px; } }
+      max-width: 1280px;
+      margin-top: 64px; } }
 
   .hero-slider-3 .content-box .heading.text-75 {
     font-size: 75px;
